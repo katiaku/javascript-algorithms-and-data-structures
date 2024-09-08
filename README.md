@@ -1,1 +1,7 @@
-JavaScript Algorithms and Data Structures problems and solutions.
+# JavaScript Algorithms and Data Structures: Problems and Solutions
+
+## JavaScript Algorithms
+
+### Math Algorithms
+
+* Fibonacci Sequence
