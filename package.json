@@ -1,0 +1,11 @@
+{
+  "name": "javascript-algorithms-and-data-structures",
+  "version": "1.0.0",
+  "description": "## JavaScript Algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
