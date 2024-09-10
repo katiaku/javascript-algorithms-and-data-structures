@@ -7,3 +7,4 @@
 * Fibonacci Sequence
 * Factorial of a Number
 * Prime Number
+* Power of Two
