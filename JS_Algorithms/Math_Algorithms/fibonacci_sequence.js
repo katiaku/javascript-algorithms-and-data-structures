@@ -18,3 +18,22 @@ function fibonacci(num) {
 console.log(fibonacci(7));
 
 // Big O: O(n)
+
+// Recursive Fibonacci Sequence
+// Problem: Given a number "n", find the nth element of the
+// Fibonacci sequence.
+// recursiveFibonacci(6) = 8
+
+function recursiveFibonacci(num) {
+  if (num < 2) {
+    return num;
+  }
+
+  return recursiveFibonacci(num - 1) + recursiveFibonacci(n - 2);
+}
+
+console.log(recursiveFibonacci(0)); // 0
+console.log(recursiveFibonacci(1)); // 1
+console.log(recursiveFibonacci(6)); // 8
+
+// Big O: O(2^n)
