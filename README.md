@@ -8,3 +8,8 @@
 * Factorial of a Number
 * Prime Number
 * Power of Two
+
+### Search Algorithms
+
+* Linear Search
+* Binary Search
