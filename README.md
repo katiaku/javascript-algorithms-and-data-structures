@@ -13,3 +13,10 @@
 
 * Linear Search
 * Binary Search
+
+### Sorting Algorithms
+
+* Bubble Sort
+* Insertion Sort
+* Quick Sort
+* Merge Sort
