@@ -21,6 +21,12 @@
 * Quick Sort
 * Merge Sort
 
+### Miscellaneous Algorithms
+
+* Cartesian Product
+* Climbing Staircase
+* Tower of Hanoi
+
 ## JavaScript Data Structures
 
 * Array
