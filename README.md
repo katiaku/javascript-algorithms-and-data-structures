@@ -30,6 +30,8 @@
 ## JavaScript Data Structures
 
 * Array
+* Set
+* Stack
 
 ## Based on the Following Sources
 
