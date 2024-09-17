@@ -21,6 +21,12 @@
 * Quick Sort
 * Merge Sort
 
+### Miscellaneous Algorithms
+
+* Cartesian Product
+* Climbing Staircase
+* Tower of Hanoi
+
 ## Based on the Following Sources
 
 * JavaScript Algorithms and Data Structures course by Codevolution ([YouTube](https://www.youtube.com/@Codevolution))
