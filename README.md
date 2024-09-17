@@ -27,6 +27,10 @@
 * Climbing Staircase
 * Tower of Hanoi
 
+## JavaScript Data Structures
+
+* Array
+
 ## Based on the Following Sources
 
 * JavaScript Algorithms and Data Structures course by Codevolution ([YouTube](https://www.youtube.com/@Codevolution))
