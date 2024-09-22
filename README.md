@@ -29,6 +29,7 @@
 * Map
 * Stack
 * Queue
+* Circular Queue
 
 ## Based on the Following Sources
 
