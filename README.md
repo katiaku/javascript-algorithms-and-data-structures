@@ -30,8 +30,12 @@
 ## JavaScript Data Structures
 
 * Array
+* Object
 * Set
+* Map
 * Stack
+* Queue
+* Circular Queue
 
 ## Based on the Following Sources
 
