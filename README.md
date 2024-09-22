@@ -24,8 +24,11 @@
 ## JavaScript Data Structures
 
 * Array
+* Object
 * Set
+* Map
 * Stack
+* Queue
 
 ## Based on the Following Sources
 
