@@ -30,6 +30,7 @@
 * Stack
 * Queue
 * Circular Queue
+* Linked List
 
 ## Based on the Following Sources
 
