@@ -130,6 +130,39 @@ class LinkedList {
     }
   }
 
+  search(value) {
+    if (this.isEmpty()) {
+      return -1;
+    }
+
+    let i = 0;
+    let curr = this.head;
+
+    while (curr) {
+      if (curr.value === value) {
+        return i;
+      }
+      curr = curr.next;
+      i++;
+    }
+
+    return -1;
+  }
+
+  reverse() {
+    let prev = null;
+    let curr = this.head;
+
+    while (curr) {
+      let next = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = next;
+    }
+
+    this.head = prev;
+  }
+
   print() {
     if (this.isEmpty()) {
       console.log("List is empty")
@@ -173,7 +206,7 @@ list.print();
 
 list.insert(40, 2);
 list.print();
-console.log(list.getSize());
+// console.log(list.getSize());
 
 // console.log(list.removeFrom(10));
 // console.log(list.removeFrom(0));
@@ -183,12 +216,19 @@ console.log(list.getSize());
 // list.print();
 // console.log(list.getSize());
 
-console.log(list.removeValue(40));
-list.print();
+// console.log(list.removeValue(40));
+// list.print();
 
-console.log(list.removeValue(20));
-list.print();
+// console.log(list.removeValue(20));
+// list.print();
 
-console.log(list.removeValue(60));
+// console.log(list.removeValue(60));
+// list.print();
+// console.log(list.getSize());
+
+// console.log(list.search(20));
+// console.log(list.search(40));
+// console.log(list.search(60));
+
+list.reverse();
 list.print();
-console.log(list.getSize());
