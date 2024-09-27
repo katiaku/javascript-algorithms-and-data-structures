@@ -37,6 +37,7 @@
 * Queue
 * Circular Queue
 * Linked List
+* Hash Table
 
 ## Based on the Following Sources
 
