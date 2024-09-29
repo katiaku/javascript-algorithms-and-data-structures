@@ -32,6 +32,7 @@
 * Circular Queue
 * Linked List
 * Hash Table
+* Binary Search Tree
 
 ## Based on the Following Sources
 
