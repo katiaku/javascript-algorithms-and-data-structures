@@ -112,6 +112,29 @@ class BinarySearchTree {
       console.log(root.value);
     }
   }
+
+  // Breadth First Search (BFS)
+  // Explore all nodes at the present depth prior to moving
+  // on to the nodes at the next depth level.
+
+  levelOrder() {
+    // TODO: use the optimized queue implementation
+    const queue = [];
+    queue.push(this.root);
+
+    while (queue.length) {
+      let curr = queue.shift();
+      console.log(curr.value);
+
+      if (curr.left) {
+        queue.push(curr.left);
+      }
+
+      if (curr.right) {
+        queue.push(curr.right);
+      }
+    }
+  }
 }
 
 const bst = new BinarySearchTree();
@@ -129,3 +152,5 @@ console.log(bst.search(bst.root, 20));
 bst.preOrder(bst.root); // 10 5 3 7 15
 bst.inOrder(bst.root); // 3 5 7 10 15
 bst.postOrder(bst.root); // 3 7 5 15 10
+
+bst.levelOrder(); // 10 5 15 3 7
