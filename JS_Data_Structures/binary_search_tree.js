@@ -77,6 +77,41 @@ class BinarySearchTree {
       }
     }
   }
+
+  // Tree traversal: visiting every node in the tree.
+
+  // Depth First Search (DFS)
+  // The DFS algorithm starts at the root node and explores
+  // as far as possible along each branch before backtracking.
+  // Visit the root node, visit all the nodes in the left subtree
+  // and visit all the nodes in the right subtree.
+
+  // Preorder Traversal
+  preOrder(root) {
+    if (root) {
+      console.log(root.value);
+      this.preOrder(root.left);
+      this.preOrder(root.right);
+    }
+  }
+
+  // Inorder Traversal
+  inOrder(root) {
+    if (root) {
+      this.inOrder(root.left);
+      console.log(root.value);
+      this.inOrder(root.right);
+    }
+  }
+
+  // Postorder Traversal
+  postOrder(root) {
+    if (root) {
+      this.postOrder(root.left);
+      this.postOrder(root.right);
+      console.log(root.value);
+    }
+  }
 }
 
 const bst = new BinarySearchTree();
@@ -85,6 +120,12 @@ console.log("Tree is empty?", bst.isEmpty());
 bst.insert(10);
 bst.insert(5);
 bst.insert(15);
+bst.insert(3);
+bst.insert(7);
 
 console.log(bst.search(bst.root, 10));
 console.log(bst.search(bst.root, 20));
+
+bst.preOrder(bst.root); // 10 5 3 7 15
+bst.inOrder(bst.root); // 3 5 7 10 15
+bst.postOrder(bst.root); // 3 7 5 15 10
