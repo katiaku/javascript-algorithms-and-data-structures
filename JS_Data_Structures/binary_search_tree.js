@@ -9,7 +9,7 @@
 // A tree will not contain any loops or cycles.
 
 // Tree usage: file systems for directory structure, a family
-// tree, an organisation tree, DOM, chat bots, abstract syntax
+// tree, an organization tree, DOM, chat bots, abstract syntax
 // trees.
 
 // A binary tree is a tree data structure in which each node
@@ -63,6 +63,134 @@ class BinarySearchTree {
       }
     }
   }
+
+  search(root, value) {
+    if (!root) {
+      return false;
+    } else {
+      if (root.value === value) {
+        return true;
+      } else if (value < root.value) {
+        return this.search(root.left, value);
+      } else {
+        return this.search(root.right, value);
+      }
+    }
+  }
+
+  // Tree traversal: visiting every node in the tree.
+
+  // Depth First Search (DFS)
+  // The DFS algorithm starts at the root node and explores
+  // as far as possible along each branch before backtracking.
+  // Visit the root node, visit all the nodes in the left subtree
+  // and visit all the nodes in the right subtree.
+
+  // Preorder Traversal
+  preOrder(root) {
+    if (root) {
+      console.log(root.value);
+      this.preOrder(root.left);
+      this.preOrder(root.right);
+    }
+  }
+
+  // Inorder Traversal
+  inOrder(root) {
+    if (root) {
+      this.inOrder(root.left);
+      console.log(root.value);
+      this.inOrder(root.right);
+    }
+  }
+
+  // Postorder Traversal
+  postOrder(root) {
+    if (root) {
+      this.postOrder(root.left);
+      this.postOrder(root.right);
+      console.log(root.value);
+    }
+  }
+
+  // Breadth First Search (BFS)
+  // Explore all nodes at the present depth prior to moving
+  // on to the nodes at the next depth level.
+
+  levelOrder() {
+    // TODO: use the optimized queue implementation
+    const queue = [];
+    queue.push(this.root);
+
+    while (queue.length) {
+      let curr = queue.shift();
+      console.log(curr.value);
+
+      if (curr.left) {
+        queue.push(curr.left);
+      }
+
+      if (curr.right) {
+        queue.push(curr.right);
+      }
+    }
+  }
+
+  // Min node (the left most)
+  min(root) {
+    if (!root.left) {
+      return root.value;
+    } else {
+      return this.min(root.left);
+    }
+  }
+
+  // Max node (the right most)
+  max(root) {
+    if (!root.right) {
+      return root.value;
+    } else {
+      return this.max(root.right);
+    }
+  }
+
+  delete(value) {
+    this.root = this.deleteNode(this.root, value);
+  }
+
+  deleteNode(root, value) {
+    if (root === null) {
+      return root;
+    }
+
+    if (value < root.value) {
+      root.left = this.deleteNode(root.left, value);
+    } else if (value > root.value) {
+      root.right = this.deleteNode(root.right, value);
+    } else {
+      // is a leaf node
+      // just remove it
+      if (!root.left && !root.right) {
+        return null;
+      }
+
+      // has one child
+      // remove it and replace it with a child
+      if (!root.left) {
+        return root.right;
+      } else if (!root.right) {
+        return root.left;
+      }
+
+      // has two child nodes
+      // remove it and replace it with the in-order successor
+      // the min value in the right subtree
+      root.value = this.min(root.right);
+      root.right = this.deleteNode(root.right, root.value);
+    }
+
+    return root;
+  }
 }
 
 const bst = new BinarySearchTree();
@@ -71,3 +199,25 @@ console.log("Tree is empty?", bst.isEmpty());
 bst.insert(10);
 bst.insert(5);
 bst.insert(15);
+bst.insert(3);
+// bst.insert(7);
+
+// console.log(bst.search(bst.root, 10));
+// console.log(bst.search(bst.root, 20));
+
+// bst.preOrder(bst.root); // 10 5 3 7 15
+// bst.inOrder(bst.root); // 3 5 7 10 15
+// bst.postOrder(bst.root); // 3 7 5 15 10
+
+// bst.levelOrder(); // 10 5 15 3 7
+
+// console.log(bst.min(bst.root));
+// console.log(bst.max(bst.root));
+
+bst.levelOrder();
+bst.delete(3);
+bst.levelOrder();
+bst.delete(15);
+bst.levelOrder();
+bst.delete(10);
+bst.levelOrder();
