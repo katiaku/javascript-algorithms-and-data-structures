@@ -9,7 +9,7 @@
 // A tree will not contain any loops or cycles.
 
 // Tree usage: file systems for directory structure, a family
-// tree, an organisation tree, DOM, chat bots, abstract syntax
+// tree, an organization tree, DOM, chat bots, abstract syntax
 // trees.
 
 // A binary tree is a tree data structure in which each node
@@ -63,6 +63,20 @@ class BinarySearchTree {
       }
     }
   }
+
+  search(root, value) {
+    if (!root) {
+      return false;
+    } else {
+      if (root.value === value) {
+        return true;
+      } else if (value < root.value) {
+        return this.search(root.left, value);
+      } else {
+        return this.search(root.right, value);
+      }
+    }
+  }
 }
 
 const bst = new BinarySearchTree();
@@ -71,3 +85,6 @@ console.log("Tree is empty?", bst.isEmpty());
 bst.insert(10);
 bst.insert(5);
 bst.insert(15);
+
+console.log(bst.search(bst.root, 10));
+console.log(bst.search(bst.root, 20));
