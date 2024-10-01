@@ -103,6 +103,12 @@ class Graph {
     this.adjacencyList[vertex1].add[vertex2];
     this.adjacencyList[vertex2].add[vertex1];
   }
+
+  display() {
+    for (let vertex in this.adjacencyList) {
+      console.log(vertex + " -> " + [...this.adjacencyList[vertex]]);
+    }
+  }
 }
 
 const graph = new Graph();
@@ -112,3 +118,5 @@ graph.addVertex("C");
 
 graph.addEdge("A", "B");
 graph.addEdge("B", "C");
+
+graph.display();
