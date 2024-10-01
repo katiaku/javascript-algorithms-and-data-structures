@@ -39,6 +39,7 @@
 * Linked List
 * Hash Table
 * Binary Search Tree
+* Graph
 
 ## Based on the Following Sources
 
