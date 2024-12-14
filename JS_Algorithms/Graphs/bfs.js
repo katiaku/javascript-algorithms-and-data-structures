@@ -1,4 +1,4 @@
-// Breadth-First Search (BFS) is a non-weighted graph traversal 
+// Breadth-First Search (BFS) is a unweighted graph traversal 
 // algorithm used to explore nodes and edges of a graph 
 // systematically. 
 // It explores all the nodes at the current depth level 
