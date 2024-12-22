@@ -27,6 +27,11 @@
 * Climbing Staircase
 * Tower of Hanoi
 
+### Miscellaneous Algorithms
+* Breadth-First Search (BFS)
+* Dijkstra's Algorithm
+* Bellman-Ford Algorithm
+
 ## JavaScript Data Structures
 
 * Array
