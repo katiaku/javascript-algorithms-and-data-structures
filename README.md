@@ -21,7 +21,7 @@
 * Quick Sort
 * Merge Sort
 
-### Miscellaneous Algorithms
+### Graph Algorithms
 
 * Cartesian Product
 * Climbing Staircase
