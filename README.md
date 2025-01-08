@@ -38,12 +38,13 @@ A collection of JavaScript algorithms and data structures with explanations and 
 ### 🎲 Miscellaneous Algorithms
 
 * Cartesian Product
-*  Climbing Staircase
+* Climbing Staircase
 * Tower of Hanoi
 
 ### 🌐 Graph Algorithms
 
 * Breadth-First Search (BFS)
+* Depth-First Search (DFS)
 * Dijkstra's Algorithm
 * Bellman-Ford Algorithm
 
