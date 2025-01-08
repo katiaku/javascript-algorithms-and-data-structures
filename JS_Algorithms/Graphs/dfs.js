@@ -1,9 +1,9 @@
 // STEPS FOR THE RECURSIVE DFS
 
-//Start from a source node.
-//Mark the node as visited.
-//Recursively visit all unvisited neighbors of the node.
-//Backtrack when no unvisited neighbors are left.
+// Start from a source node.
+// Mark the node as visited.
+// Recursively visit all unvisited neighbors of the node.
+// Backtrack when no unvisited neighbors are left.
 
 function dfsRecursive(graph, start, visited = new Set()) {
     visited.add(start);
@@ -29,27 +29,30 @@ const graph = {
 console.log("DFS Recursive:");
 dfsRecursive(graph, "A");
 
-/*Time Complexity:
+/* Time Complexity:
 
 Adjacency List Representation: 
-ð‘‚(ð‘‰+ð¸), where V is the number of vertices and ð¸ is the number of edges.
+O(V + E), where V is the number of vertices and E is the number of edges.
 
 Adjacency Matrix Representation: 
-ð‘‚(ð‘‰^2) */
+O(V^2), where V is the number of vertices.
+*/
 
-/* Space Complexity
+/* Space Complexity:
 
 Recursive: 
-ð‘‚(ð‘‰)(due to recursion stack).
+O(V) (due to recursion stack).
+
 Iterative: 
-ð‘‚(ð‘‰) (stack data structure). */
+O(V) (due to the stack data structure).
+*/
 
 
 // Iterative Implementation
 
-//Start from a source node.
-//Mark the node as visited.
-//By Iteration visit all unvisited neighbors of the node.
+// Start from a source node.
+// Mark the node as visited.
+// By Iteration visit all unvisited neighbors of the node.
 
 
 function dfsIterative(graph, start) {
@@ -75,7 +78,6 @@ function dfsIterative(graph, start) {
 // Example
 console.log("DFS Iterative:");
 dfsIterative(graph, "A");
-
 
 
 // Implementation for disconnected graph
@@ -105,19 +107,19 @@ dfsDisconnected(disconnectedGraph);
 /* 
 Comparison to BFS
 
-1.) DataStructure: Use stack for DFS
+1.) Data Structure: Use Stack for DFS
                     Use Queue for BFS
 
-2.) Path: DFS may not find sortest Path
+2.) Path: DFS may not find shortest Path
           BFS always finds shortest path
 
-3.) Traversal: Depth first Search for DFS
+3.) Traversal: Depth-first Search for DFS
                 Level-by-level for BFS
 
-4.) Space Complexity: O(V) for recursion stack(DFS)
+4.) Space Complexity: O(V) for recursion stack (DFS)
                       O(V) for queue
 
 5.) Use Cases: Toplogical sorting for DFS
                 Level order sorting for BFS
-                */
+*/
 
