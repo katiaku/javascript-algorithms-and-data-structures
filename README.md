@@ -10,8 +10,9 @@ A collection of JavaScript algorithms and data structures with explanations and 
     - [🌐 Graph Algorithms](#graph-algorithms)
     - [🎲 Miscellaneous Algorithms](#miscellaneous-algorithms)
 2. [🛠️ JavaScript Data Structures](#javascript-data-structures)
-3. [📖 Sources](#based-on-the-following-sources)
-4. [📂 Project Information](#project-information)
+3. [📦 Object Oriented Programming (OOP) in JavaScript](#javascript-oop)
+4. [📖 Sources](#based-on-the-following-sources)
+5. [📂 Project Information](#project-information)
 
 ## 📊 JavaScript Algorithms
 
@@ -62,12 +63,16 @@ A collection of JavaScript algorithms and data structures with explanations and 
 * Binary Search Tree
 * Graph
 
+## 📦 Object Oriented Programming (OOP) in JavaScript
+* Objects (object literal data structure, factory function, constructor function, value vs reference, adding and removing a property, keys and values, abstraction, private properties and methods, getters and setters)
+
 ## 🧩 NP-Complete Problems Description
 
 ## 📖 Sources
 
 * JavaScript Algorithms and Data Structures course by Codevolution ([YouTube](https://www.youtube.com/@Codevolution))
 * Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People by Aditya Bhargava ([Amazon](https://www.amazon.es/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230/ref=asc_df_1617292230/?tag=googshopes-21&linkCode=df0&hvadid=699717042931&hvpos=&hvnetw=g&hvrand=6516416806533499586&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=20285&hvtargid=pla-436862069177&psc=1&mcid=d1ec5fbacca337e588916c8bad0ae446&gad_source=1))
+* JavaScript Essentials Course by freeCodeCamp ([YouTube](https://www.youtube.com/watch?v=876aSEUA_8c&list=WL&index=42))
 
 ## 📂 Project Information
 
