@@ -66,6 +66,7 @@ A collection of JavaScript algorithms and data structures with explanations and 
 ## Object Oriented Programming
 * Objects (object literal data structure, factory function, constructor function, value vs reference, adding and removing a property, keys and values, abstraction, private properties and methods, getters and setters)
 * Prototypes (prototypical inheritance, multilevel inheritance, property descriptors, super constructor, method overriding, polymorphism, composition using mixins)
+* Classes (ES6 class syntax, hoisting, function declarations vs function expressions, static methods vs instance methods, "this" keyword, private members using Symbols, private members using WeakMaps, getters and setters, inheritance and method overriding)
 
 ## NP-Complete Problems Description
 
